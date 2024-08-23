@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block page_title %}Details{% endblock %}
+
+{% block content %}
+<div class="image-gallery-container">
+    <h2 class="gallery-title">User Image Gallery</h2>
+    <ul class="image-gallery">
+        {% for renderimage in renderingimg %}
+        <li>
+            <img src="{{ renderimage.userimage.url }}" alt="{{ renderimage }}" class="user-image">
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
+

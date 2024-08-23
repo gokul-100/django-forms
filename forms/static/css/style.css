@@ -1,0 +1,38 @@
+.image-gallery-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.image-gallery {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-gallery li {
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.image-gallery li:hover {
+    transform: scale(1.05);
+}
+
+.user-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
